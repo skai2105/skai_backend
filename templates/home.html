@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKA Solutions - Multi-Cloud & AI Consulting</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 5rem 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #home {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/800');
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        #home h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: white;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        button {
+            padding: 1rem 2rem;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h1 data-aos="fade-up">CloudTech Solutions</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Empowering businesses through cloud innovation, AI integration, and DevOps excellence</p>
+            <button data-aos="fade-up" data-aos-delay="400">Get Started</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 data-aos="fade-right">About Us</h2>
+            <p data-aos="fade-right" data-aos-delay="200">CloudTech Solutions is a leading technology consulting firm specializing in multi-cloud architecture, artificial intelligence implementation, and DevOps practices. With over a decade of experience, we've helped hundreds of businesses transform their digital infrastructure and achieve operational excellence.</p>
+            <div class="grid">
+                <div class="card" data-aos="fade-up">
+                    <h3>Our Mission</h3>
+                    <p>To accelerate digital transformation through innovative cloud solutions and AI integration.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Our Vision</h3>
+                    <p>To be the global leader in enterprise cloud transformation and AI adoption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 data-aos="fade-right">Our Services</h2>
+            <div class="grid">
+                <div class="card" data-aos="fade-up">
+                    <h3>Multi-Cloud Architecture</h3>
+                    <p>Design and implementation of scalable multi-cloud solutions across AWS, Azure, and Google Cloud.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>AI & Machine Learning</h3>
+                    <p>Custom AI solutions, machine learning model development, and AI integration services.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>DevOps Consulting</h3>
+                    <p>End-to-end DevOps implementation, CI/CD pipeline setup, and infrastructure automation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2 data-aos="fade-right">Our Products</h2>
+            <div class="grid">
+                <div class="card" data-aos="fade-up">
+                    <h3>CloudManager Pro</h3>
+                    <p>Unified cloud management platform for multi-cloud environments.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>AI Optimizer</h3>
+                    <p>AI-powered optimization tool for cloud resource management.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>DevOps Toolkit</h3>
+                    <p>Comprehensive suite of DevOps tools and templates.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-aos="fade-right">Contact Us</h2>
+            <form data-aos="fade-up">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CloudTech Solutions. All rights reserved.</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
